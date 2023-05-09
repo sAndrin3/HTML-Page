@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Input Types and Attributes</title>
+  </head>
+  <body>
+    <h1>Form Input Types and Attributes</h1>
+    <form>
+      <h2>Text Inputs</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="50" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+      title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+
+      <h2>Number Inputs</h2>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+      <label for="height">Height:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" required><br>
+
+      <h2>Checkbox Inputs</h2>
+      <label for="agree">I agree to the terms and conditions:</label>
+      <input type="checkbox" id="agree" name="agree" required><br>
+
+      <label for="interests">Select your interests:</label><br>
+      <input type="checkbox" id="interest1" name="interests" value="football">
+      <label for="interest1">Football</label><br>
+      <input type="checkbox" id="interest2" name="interests" value="music">
+      <label for="interest2">Music</label><br>
+      <input type="checkbox" id="interest3" name="interests" value="travel">
+      <label for="interest3">Travel</label><br>
+
+      <h2>Radio Inputs</h2>
+      <label for="gender">Select your gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+
+      <h2>Select Input</h2>
+      <label for="country">Select your country:</label>
+      <select id="country" name="country">
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="ethiopia">Ethiopia</option>
+      </select><br>
+
+      <h2>File Input</h2>
+      <label for="file">Upload your photo:</label>
+      <input type="file" id="file" name="file"><br>
+
+      <h2>Submit Button</h2>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
